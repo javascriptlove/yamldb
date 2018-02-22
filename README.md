@@ -1,4 +1,4 @@
-#YAML Database
+# YAML Database
 
 YAML database is a document database which stores documents as YAML files. The documents in the database can be maintained by simply editing the yaml files.
 
@@ -6,23 +6,23 @@ This database was designed to be used for systems like CMS systems, where an eas
 
 Storing the database as separate files lets you use version control systems like git on the database, which is again ideal for storing settings, configurations, blog posts and CMS content.
 
-###Advantages
+### Advantages
 * Can easily change database entries
 * Can use version control on the database
 * Ideal for settings and configurations (user configs etc)
 
 
-###Disadvantages
+### Disadvantages
 * No SQL or similar functionality (like searching the database)
 * Not suitable for storing transactional data
 
-##Installation
+## Installation
 
     npm install yamldb
 
-##[Documentation](http://vpj.github.io/yamldb/)
+## [Documentation](http://vpj.github.io/yamldb/)
 
-##[Example.coffee](http://vpj.github.io/yamldb/example.html)
+## [Example.coffee](http://vpj.github.io/yamldb/example.html)
 
     yamldb = require 'yamldb'
 
@@ -40,8 +40,10 @@ Define a object model
 
 An object of all object models
 
-    models =
-     Fruit: Fruit
+```
+models =
+ Fruit: Fruit
+```
 
 Initialize database, where `testdata` is the path of the database.
 
